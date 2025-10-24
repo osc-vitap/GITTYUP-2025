@@ -1,4 +1,4 @@
-# PROMPT FOR GENERATING INDEX.HTML
+# PROMPT FOR GENERATING index.html and style.css
 
 ## copy paste this prompt in chatgpt and take the html generated and paste it in index.html and style.css
 
