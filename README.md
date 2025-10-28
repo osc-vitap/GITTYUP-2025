@@ -26,6 +26,8 @@ Education Section – Degree, University, Graduation year
 
 Contact/Footer – Email, GitHub, LinkedIn, Copyright
 
+Hobby section - Hobbies
+
 The CSS file should:
 
 Make the layout fully responsive (mobile-first)
