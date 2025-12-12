@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokeswara Achari — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">>_ LOKESWARA</div>
+
+            <button class="hamburger" id="hamburger">☰</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <h1 class="glow">MADITHATI LOKESWARA ACHARI</h1>
+            <h2 class="role-text">BTECH SECOND YEAR STUDENT — CSE CORE</h2>
+            <p class="tagline">Aspiring Software Engineer | Problem Solver | Tech Explorer</p>
+
+            <div class="terminal-box">
+                <p class="terminal-line">Initializing portfolio... <span class="blink">█</span></p>
+            </div>
+
+            <p class="location">📍 Vijayawada, Andhra Pradesh</p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2 class="section-title">> Academic Profile</h2>
+            <div class="content-box">
+                <p><strong>University:</strong> VIT-AP University</p>
+                <p><strong>Branch:</strong> Computer Science Engineering (Core)</p>
+                <p><strong>Status:</strong> 2-2 | CGPA: <strong>9.45</strong> (2024–2028)</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2 class="section-title">> Technical Expertise</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">Python Basics</div>
+                <div class="skill-card">Java (OOP)</div>
+                <div class="skill-card">C & C++</div>
+                <div class="skill-card">Data Structures</div>
+                <div class="skill-card">Algorithms</div>
+                <div class="skill-card">AI Basics</div>
+                <div class="skill-card">n8n Automation</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">VS Code / IntelliJ</div>
+                <div class="skill-card">Linux & Windows</div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2 class="section-title">> Featured Projects</h2>
+
+            <div class="project">
+                <h3>🚨 Safety Monitoring System</h3>
+                <p>
+                    A smart predictive flood-alert model built for ECS.  
+                    Designed to analyze previous flood data, detect patterns,  
+                    and trigger early warning alarms.
+                </p>
+                <div class="stack">Tech: Sensors, Python, Prediction Logic</div>
+            </div>
+
+            <div class="project">
+                <h3>🤖 Telegram Automation Bot</h3>
+                <p>
+                    A lightweight automation bot built using n8n.  
+                    Handles commands, workflows, and chat interactions efficiently.
+                </p>
+                <div class="stack">Tech: n8n, Webhooks, API</div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="section-title">> Contact & Profiles</h2>
+
+            <div class="content-box">
+                <p><strong>Email:</strong> 
+                    <a href="mailto:lokeswaramadithati@gmail.com">lokeswaramadithati@gmail.com</a>
+                </p>
+
+                <p><strong>GitHub:</strong> 
+                    <a href="https://github.com/lokeswaram" target="_blank">github.com/lokeswaram</a>
+                </p>
+
+                <p><strong>LinkedIn:</strong> 
+                    <a href="https://www.linkedin.com/in/lokeswaram/" target="_blank">linkedin.com/in/lokeswaram</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Lokeswara Achari — Designed in a Hacker Terminal Style</p>
+    </footer>
+
+    <!-- MOBILE MENU JS -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
