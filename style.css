@@ -1,0 +1,162 @@
+/*==============================
+    GLOBAL THEME VARIABLES
+===============================*/
+:root {
+    --bg: #0a0a0a;
+    --card: #111;
+    --text: #e4e4e4;
+    --accent: #39ff14; /* neon green */
+    --accent-soft: #2ecc71;
+    --font-mono: "Courier New", monospace;
+    --font-body: "Segoe UI", sans-serif;
+}
+
+/*==============================
+    BASE STYLES
+===============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.7;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+/*==============================
+    NAVBAR
+===============================*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #000;
+    border-bottom: 1px solid #111;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10%;
+}
+
+.logo {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: var(--font-mono);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-soft);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 30px;
+}
+
+/*==============================
+    HERO SECTION
+===============================*/
+.hero {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-family: var(--font-mono);
+}
+
+.glow {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.tagline {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/*==============================
+    SECTION TITLES + BOXES
+===============================*/
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+}
+
+.content-box,
+.project {
+    background: var(--card);
+    padding: 20px;
+    border-left: 3px solid var(--accent);
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/*==============================
+    FOOTER
+===============================*/
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #000;
+    color: #666;
+}
+
+/*==============================
+    RESPONSIVENESS
+===============================*/
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 200px;
+        background: #000;
+        flex-direction: column;
+        padding: 15px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
